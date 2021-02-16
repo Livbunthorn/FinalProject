@@ -1,0 +1,159 @@
+.text-nav {
+  display: flex;
+  font-size: 40px;
+  padding-left: 40px;
+}
+
+.text-nav :nth-child(2) {
+  color: rgb(83, 121, 27);
+}
+
+.icon-nav {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  padding-right: 15px;
+}
+
+.btn-nav {
+  width: 70px;
+  height: 35px;
+  box-shadow: 1px 2px 2px;
+  transform: scale(0.8);
+}
+
+.containter-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+
+  width: 100%;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 10%;
+}
+.bg-text {
+  font-size: 60px;
+}
+.sm-text {
+  font-size: 22px;
+}
+input {
+  width: 700px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.table-center {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.tr-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-coupon {
+  border: black solid 2px;
+
+  width: 28%;
+  padding: 20px;
+  background-color: rgb(221, 134, 148);
+}
+.card-coupon:nth-child(2) {
+  background-color: rgb(235, 212, 109);
+}
+.card-coupon:nth-child(3) {
+  background-color: rgb(196, 143, 196);
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  height: 40px;
+  box-shadow: 4px 3px 0px;
+  margin-right: 20px;
+}
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-price {
+  width: 1100px;
+  padding: 20px;
+}
+
+.category-center {
+  display: flex;
+  align-items: center;
+}
+.price-1 {
+  margin-left: 20px;
+  color: red;
+  text-decoration: line-through;
+}
+.price-2 {
+  margin-left: 20px;
+
+  color: green;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: orange;
+  margin-left: 230px;
+}
+.tr-price:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.tr-price:nth-child(3) td {
+  display: flex;
+  align-items: center;
+  border: none;
+  width: 100px;
+  height: 7px;
+  background-color: yellowgreen;
+  border-radius: 8px;
+}
+.center-product {
+  border: solid black 1px;
+}
+.description,
+.loading,
+.img-product,
+.name-product {
+  text-align: center;
+}
+.manage-wrapper {
+  background-color: rgb(83, 121, 27);
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+}

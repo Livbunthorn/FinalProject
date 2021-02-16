@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/32bbfa4a37.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="containter-nav">
+        <div class="text-nav">
+            <p>Awesome</p>
+            <p>Shop</p>
+        </div>
+        <div>
+            <div class="icon-nav">
+                <p class="text"> 
+                   
+                        <a href="/help">
+                            <p class="text"> 
+                                <i class="far fa-question-circle"></i>
+
+                              Need help
+                             
+                          </p>
+                              </a>
+                            
+                        <a href="/signin"><button class="btn-nav">Join</button>
+
+                        </a>
+                   
+                </p>
+            </div>
+    </nav>
+
+    <div class="image-1">
+        <img src="assets/Cloths-bc740630f228713e4bb0de8a7bffce22.png" width="100%">
+        <div class="center">
+            <p class="bg-text">Shop your designer dressess</p>
+            <p class="sm-text">Ready to wear dresses tailored for you from online. Hurry up while stock lasts.</p>
+            <div>
+                <input style="font-family: FontAwesome;" placeholder='&#xf002  Search your products from here' />
+
+            </div>
+        </div>
+    </div>
+   
+    <table class="table-center">
+        <tr class="tr-card">
+            <td class="card-coupon">
+                <h3>Coupon savings  </h3>
+                <div class="card">
+                   <p>Up to 60% of everyday essentials</p> 
+                   <img src="assets/icons8-coupon-100.png" width="70">
+                </div>
+                <p> </p>
+                <button>Shop Coupons</button>
+            </td>
+            <td class="card-coupon">
+                <h3>free Delivery</h3>
+                <div class="card">
+                   <p>With selected items</p> 
+                   <img src="assets/checked-truck.png" width="65">
+                </div>
+                <p> </p>
+                <button>Deliver Now</button>
+            </td>
+            <td class="card-coupon">
+                <h3>Gift Voucher</h3>
+                <div class="card">
+                   <p>With personal care items</p> 
+                   <img src="assets/gift--v1.png" >
+                </div>
+                <p> </p>
+                <button>Gift Now</button>
+            </td>
+        </tr>
+        
+    </table>
+<div class="item">
+        <div class="category">
+            
+            <p class="category-center">
+                <img src="assets/icon_laptop.png" width="30">
+                Electronics
+            </p>
+            <p class="category-center">
+                <img src="assets/icon_bag-front-view.png" width="30">
+                Hand bags
+            </p>
+            <p class="category-center">
+                <img src="assets/icon_wallet.png" width="30">
+                Wallet
+            </p>
+            <p class="category-center">
+                <img src="assets/icon_clothes.png" width="30">
+                Clothes
+            </p>
+        </div>
+        <div class="item-card">
+         <table class="table-price">
+               
+            <tr class="tr-price">
+                <% for(var i = 0; i < admins.length; i++) { %>
+                    <% var aprice = admins[i].price -(admins[i].discount* admins[i].price)/100%>
+
+                    <% if(i%3===0){ %>
+                        <tr class="tr-price">
+                        </tr>
+                       
+                        <% } %>
+                <td class="center-product">
+                    <p class="discount"><%= admins[i].discount %> %</p>
+                    <div class="img-product">
+                        <a href="/detailUser"><img  src="assets/shopify.png" width="200px" ></a>
+
+                    </div>
+                    <p class="name-product"><b><%=admins[i].name %></b> </p>
+                    <p class="description"><%=admins[i].detail %> </p>
+                    <div class="price">
+                        <div>
+                            <p class="price-1"><%=admins[i].price %> $</p>
+                            <p class="price-2"><%=aprice %> $</p>
+                        </div>
+                       
+                        <button>
+                            <i class="fas fa-cart-plus"></i>                            
+                        Chart
+                        </button>
+                    </div>
+                </td>
+              
+                <% } %>
+            </tr>
+        
+             </table>
+         </div>
+         </div>
+     </div>
+     <div class="loading">
+        <button >Loading more..</button>
+
+     </div>
+</body>
+
+</html>
